@@ -17,4 +17,9 @@ public class TextBox extends Control{
         getControl();
         this.control.clear();
     }
+
+    public String getInput(){
+        getControl();
+        return this.control.getAttribute("value");
+    }
 }
